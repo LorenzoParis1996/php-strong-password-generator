@@ -1,5 +1,7 @@
 <?php 
 
+
+
 $users = [
     [
       "username" => "mickey",
@@ -22,5 +24,7 @@ $users = [
         "password" => "orange"
     ],
 ];
+
+var_dump($users);
 
 ?>

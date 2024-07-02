@@ -1,14 +1,5 @@
 <?php 
-
-require_once __DIR__ . "/users.php";
-
 session_start();
-
-if(isset($_GET["username"]) && isset($_GET["password"])) {
-    $_SESSION["username"] = $_GET["username"];
-    $_SESSION["password"] = $_GET["password"];
-}
-
 
 
 ?>
@@ -22,8 +13,8 @@ if(isset($_GET["username"]) && isset($_GET["password"])) {
 </head>
 <body>
     <h1>Welcome</h1>
-    <p><?php echo $_SESSION["username"] ?></p>
-    <p><?php echo $_SESSION["password"] ?></p>
+    <p><?php echo $_SESSION["username"]; ?></p>
+    
 
     <h3>Log Out</h3>
     <form action="./logout.php">
